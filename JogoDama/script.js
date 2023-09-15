@@ -253,7 +253,7 @@ let model = {
       /*FUNÇÃO PEÇA PRETA */
       BlackPiece: function (row, column) {
       this.__proto__ = new model.Piece(row, column);
-      this.src = 'img/black.jpg';
+      this.src = 'img/black.png';
       this.color = "black";
       this.highlightMoves = function (row, column) {
       if (this.highlightMove(row-1, column-1))
@@ -272,7 +272,7 @@ let model = {
       /*FUNÇÃO PEÇA BRANCA */
       WhitePiece: function (row, column) {
       this.__proto__ = new model.Piece(row, column);
-      this.src = 'img/white.jpg';
+      this.src = 'img/white.png';
       this.color = "white";
       this.highlightMoves = function (row, column) {
       if (this.highlightMove(row+1, column+1))
@@ -352,5 +352,8 @@ let model = {
       }
       });
       });
+      function redirecionarParaIndex() {
+            window.location.href = 'index.html'; // Substitua 'index.html' pelo caminho correto do seu arquivo HTML
+          }
       /*CHAMANDO A FUNÇÃO INIT */
       init();
