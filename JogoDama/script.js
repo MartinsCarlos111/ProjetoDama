@@ -291,7 +291,7 @@ let model = {
       /*FUNÇÃO DAMA PRETA E TROCA A IMAGEM */
       BlackDama: function (row, column) {
       this.__proto__ = new model.BlackPiece(row, column);
-      this.src = 'img/blackdama.jpg';
+      this.src = 'img/blackdama.png';
       this.highlightMoves = function (row, column) {
       if (this.highlightMove(row+1, column+1))
       this.highlightMove(row+2, column+2);
